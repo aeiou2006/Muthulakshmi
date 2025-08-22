@@ -1,0 +1,41 @@
+show databases;
+
+create database saThyabaMa;
+
+use sathyabama;
+
+create table ECE(
+
+sid int,
+
+sname varchar(30),
+
+smarks int
+
+);
+
+show tables from sathyabama;
+
+desc ece;
+
+select * from ece;
+
+create table CSE(
+
+sid int,
+
+sname varchar(30),
+
+smarks int
+
+);
+
+show tables from sathyabama;
+
+desc CSE;
+
+select * from CSE;
+
+insert into CSE (sid,sname,smarks)
+
+values(7,'muthu',78)
