@@ -1,0 +1,49 @@
+show databases;
+
+create database saThyabaMa;
+
+use sathyabama;
+
+create table EEE(
+
+sid int,
+
+sname varchar(30),
+
+smarks int
+
+);
+
+show tables from sathyabama;
+
+desc eee;
+
+insert into eee values(1001,'muthu',100),(1002,'shalini',101);
+
+alter table eee add 
+semail varchar(25);
+
+insert into eee values(1000,'narmu',100,'muthulakshmi19906@gmail.com');
+
+ALTER TABLE eee add(
+sphone int8);
+
+alter table eee drop column semail;
+
+select * from eee;
+
+ALTER TABLE eee add(
+scountry varchar(40) default 'india'
+);
+
+ALTER TABLE eee RENAME column 
+ scountry TO slocation;
+
+UPDATE eee SET slocation = 'india'
+ WHERE sid=1004;
+
+UPDATE eee SET slocation = 'india' ,smarks=30
+
+WHERE sid=1004;
+ 
+UPDATE eee set smarks = smarks+1;
